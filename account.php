@@ -1,6 +1,6 @@
 <?php
-$hostname = "localhost";
-$username = "test";
-$password = "123456";
+$hostname = "192.168.1.106";
+$username = "dbuser";
+$password = "pass1";
 $project = "testDb";
 ?>

@@ -11,8 +11,8 @@ if (mysqli_connect_errno()) {
 }
 print "Successfully connected to MySQL.<br>";
 
-$db = mysqli_connect($hostname, $username, $password, $project);
-mysqli_select_db($db, $project);
+$db = mysqli_connect($hostname, $username, $password, $project) or die("cannot connect");
+mysqli_select_db($db, $project) or die("cannot select db");
 
 
 $email = $_POST['email'];
