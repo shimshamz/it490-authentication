@@ -18,14 +18,9 @@ $fname = $_POST['fname'];
 $lname = $_POST['lname'];
 $email = $_POST['email'];
 $pass = $_POST['pass'];
-$passConf = $_POST['passConf'];
 
-if ($pass !== $passConf) {
-	print "<br>Passwords don't match";
-}
-else {
-	register($fname, $lname, $email, $pass);
-}
+register($fname, $lname, $email, $pass);
+
 
 ?>
 
